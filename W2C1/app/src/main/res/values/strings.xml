@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">W2C1</string>
-    <string name="ayy">PSU</string>
-    <string name="tag1">We Are</string>
-    <string name="tag2">Penn State</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="exlaim_btn">Exlamation</string>
+    <string name="hello">Hello</string>
+    <string name="goodbye">Goodbye</string>
+    <string name="exclaim_img">Exlamation image</string>
+    <string name="psu">PSU</string>
+    <string name="psu1">We Are</string>
+    <string name="psu2">Penn State</string>
 </resources>
