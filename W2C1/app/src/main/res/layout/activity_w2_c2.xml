@@ -35,7 +35,8 @@
         app:srcCompat="@drawable/greetimage"
         android:id="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        android:contentDescription="asdf" />
 
     <Button
         android:text="@string/exlaim_btn"
