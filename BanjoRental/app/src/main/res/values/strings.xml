@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BanjoRental</string>
+    <string name="bjcl"># of Banjos:</string>
+    <string name="ccl"># of Cases:</string>
+    <string name="brc">Base Rental Fees:</string>
+    <string name="tl">Sales State Tax:</string>
+    <string name="il">Insurance:</string>
+    <string name="tcl">Total Cost:</string>
+</resources>
