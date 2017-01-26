@@ -8,48 +8,132 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="cmpsc475.banjorental.MainActivity">
+    tools:context="cmpsc475.banjorental.MainActivity"
+    android:background="@drawable/banjo">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bjcl"
-        android:id="@+id/bjl" />
+        android:id="@+id/bjl"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/NumBanjo"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/ncl" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/NumBanjo"
+        android:textSize="18sp"
+        android:text="@string/intzero"
+        android:gravity="right"
+        android:onClick="clearText"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ccl"
-        android:layout_below="@+id/bjl"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/ncl" />
+        android:id="@+id/ncl"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/NumCases"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:id="@+id/NumCases"
+        android:layout_below="@+id/NumBanjo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:text="@string/intzero"
+        android:gravity="right"
+        android:onClick="clearText"
+        android:inputType="numberSigned" />
 
     <RelativeLayout
         android:id="@+id/innerLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/ncl"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="111dp"
-        android:layout_centerInParent="false">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NumCases"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@android:color/background_light">
 
         <TextView
-            android:text="@string/tcl"
+            android:text="@string/brc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tcl" />
+            android:id="@+id/bcl"
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/totalcostlabel"
-            android:text="0.00"
-            android:layout_alignParentTop="true"
+            android:text="@string/doublezero"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:id="@+id/BaseCost"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:text="@string/tl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stl"
+            android:textSize="18sp"
+            android:layout_below="@id/bcl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doublezero"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/BaseCost"
+            android:id="@+id/SalesTax"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:text="@string/il"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/il"
+            android:textSize="18sp"
+            android:layout_below="@id/stl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doublezero"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/SalesTax"
+            android:id="@+id/Insurance"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:text="@string/tl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tcl"
+            android:textSize="18sp"
+            android:layout_below="@id/il"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doublezero"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/Insurance"
+            android:id="@+id/TotalCost"
+            android:textSize="18sp"/>
+
     </RelativeLayout>
 </RelativeLayout>
