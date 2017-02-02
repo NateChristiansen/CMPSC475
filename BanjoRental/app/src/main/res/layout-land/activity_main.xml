@@ -59,13 +59,27 @@
         android:textSize="18sp"
         android:inputType="numberSigned" />
 
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/InsuranceSwitch"
+        android:text="Insurance"
+        android:textSize="18sp"
+        android:layout_below="@id/NumCases"
+        android:textColor="?android:attr/textColorTertiary"
+        android:switchPadding="10sp"
+        android:showText="true"
+        android:textOff="No"
+        android:textOn="Yes"/>
+
     <TextView
         android:id="@+id/bcl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/brc"
         android:textSize="18sp"
-        android:layout_toLeftOf="@id/BaseCost"/>
+        android:layout_toLeftOf="@id/BaseCost"
+        android:layout_alignTop="@id/bjl"/>
 
     <TextView
         android:id="@+id/BaseCost"
@@ -73,7 +87,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:text="@string/doublezero"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_alignTop="@id/bjl"/>
 
     <TextView
         android:id="@+id/stl"
@@ -82,7 +97,8 @@
         android:layout_below="@id/bcl"
         android:text="@string/tl"
         android:textSize="18sp"
-        android:layout_alignLeft="@id/bcl"/>
+        android:layout_alignLeft="@id/bcl"
+        android:layout_alignTop="@id/ncl"/>
 
     <TextView
         android:id="@+id/SalesTax"
@@ -91,7 +107,8 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/BaseCost"
         android:text="@string/doublezero"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_alignTop="@id/ncl"/>
 
     <TextView
         android:id="@+id/il"
@@ -100,7 +117,8 @@
         android:layout_below="@id/stl"
         android:text="@string/il"
         android:textSize="18sp"
-        android:layout_alignLeft="@id/bcl"/>
+        android:layout_alignLeft="@id/bcl"
+        android:layout_alignTop="@+id/InsuranceSwitch"/>
 
     <TextView
         android:id="@+id/Insurance"
@@ -109,14 +127,15 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/SalesTax"
         android:text="@string/doublezero"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_alignTop="@id/il"/>
 
     <TextView
         android:id="@+id/tcl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/il"
-        android:text="@string/tl"
+        android:text="@string/tcl"
         android:textSize="18sp"
         android:layout_alignLeft="@id/bcl"/>
 

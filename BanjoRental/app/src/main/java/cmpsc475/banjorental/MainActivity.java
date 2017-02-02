@@ -1,5 +1,6 @@
 package cmpsc475.banjorental;
 
+import android.annotation.TargetApi;
 import android.icu.text.DecimalFormat;
 import android.icu.text.NumberFormat;
 import android.os.Build;
@@ -9,7 +10,10 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -17,12 +21,15 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
     EditText numBanjo, numCases;
-    final double BANJO_COST = 3, CASE_COST = 1, SALES_TAX = .05, INSURANCE = 0;
+    final double BANJO_COST = 10, CASE_COST = 1, SALES_TAX = .05, INSURANCE = 2;
     TextView baseCost, salesTax, insurance, totalCost;
+    boolean insuranceEnabled = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getLayoutInflater().inflate(R.layout.activity_main, null).getBackground().setAlpha(50);
 
         baseCost = (TextView) findViewById(R.id.BaseCost);
         salesTax = (TextView) findViewById(R.id.SalesTax);
@@ -57,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
                 UpdateCost();
             }
         });
+
+        ((Switch) findViewById(R.id.InsuranceSwitch)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @TargetApi(Build.VERSION_CODES.N)
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                insuranceEnabled = !insuranceEnabled;
+                UpdateCost();
+            }
+        });
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -75,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         }
         double base = banjos * BANJO_COST + cases * CASE_COST;
         double tax = base * SALES_TAX;
-        double ins = INSURANCE;
+        double ins = insuranceEnabled ? INSURANCE * banjos : 0;
         double totcost = base + tax + ins;
 
         DecimalFormat df = new DecimalFormat("'$'0.00");

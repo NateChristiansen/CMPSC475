@@ -58,16 +58,28 @@
         android:onClick="clearText"
         android:inputType="numberSigned" />
 
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/InsuranceSwitch"
+        android:text="Insurance"
+        android:textSize="18sp"
+        android:layout_below="@id/NumCases"
+        android:textColor="?android:attr/textColorTertiary"
+        android:switchPadding="10sp"
+        android:showText="true"
+        android:textOff="No"
+        android:textOn="Yes"/>
+
     <RelativeLayout
         android:id="@+id/innerLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/NumCases"
+        android:layout_below="@+id/InsuranceSwitch"
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@android:color/background_light">
+        android:layout_marginRight="50dp">
 
         <TextView
             android:text="@string/brc"
@@ -119,7 +131,7 @@
             android:textSize="18sp"/>
 
         <TextView
-            android:text="@string/tl"
+            android:text="@string/tcl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tcl"
