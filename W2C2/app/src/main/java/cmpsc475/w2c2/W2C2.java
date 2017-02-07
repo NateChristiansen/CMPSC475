@@ -24,6 +24,10 @@ public class W2C2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 counter.negatives = isChecked;
+                if (counter.getCount() < 0) {
+                    counter.sub(1);
+                    countview.setText(counter.getCount().toString());
+                }
             }
         });
     }
