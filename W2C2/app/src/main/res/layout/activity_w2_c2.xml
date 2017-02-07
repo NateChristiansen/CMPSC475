@@ -10,38 +10,86 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="cmpsc475.w2c2.W2C2">
 
-    <Button
-        android:text="@string/tap_btn"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView2"
-        android:layout_toLeftOf="@+id/textView2"
-        android:layout_toStartOf="@+id/textView2"
-        android:textSize="30sp"
-        android:onClick="countTap" />
-
-    <Button
-        android:text="@string/tap_min"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_alignBaseline="@+id/button"
-        android:layout_alignBottom="@+id/button"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2"
-        android:textSize="30sp"
-        android:onClick="countMin" />
-
-    <TextView
-        android:text="@string/zilch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        style="@android:style/TextAppearance.Large"
-        android:textSize="36sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp" />
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:text="@string/zilch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            style="@android:style/TextAppearance.Large"
+            android:textSize="36sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp" />
+
+        <Button
+            android:text="@string/tap_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:id="@+id/button"
+            android:layout_below="@+id/textView2"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:textSize="30sp"
+            android:onClick="countTap"
+            style="@android:style/TextAppearance.Large"/>
+
+        <Button
+            android:text="@string/tap_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_alignBaseline="@+id/button"
+            android:layout_alignBottom="@+id/button"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:textSize="30sp"
+            android:onClick="countMin"
+            style="@android:style/TextAppearance.Large"/>
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/rgroup"
+        android:layout_marginLeft="140dp">
+
+        <RadioButton
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbutton1"
+            android:checked="true"
+            android:layout_marginTop="65dp" />
+
+        <RadioButton
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbutton5" />
+
+        <RadioButton
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbutton10" />
+
+    </RadioGroup>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/negbox"
+        android:layout_below="@id/rgroup"
+        android:layout_alignLeft="@id/rgroup"
+        android:text="Enable Negatives" />
+
 </RelativeLayout>

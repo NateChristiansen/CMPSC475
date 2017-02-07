@@ -6,16 +6,19 @@ package cmpsc475.w2c2;
 
 public class Counter {
     private int count;
+    public boolean negatives;
 
     public Counter(){
         count = 0;
     }
-    public void add(){
-        count++;
+    public void add(int i){
+        count+=i;
     }
-    public void sub(){
-        if (count > 0)
-            count--;
+    public void sub(int i){
+        if (count >= i || negatives)
+            count-=i;
+        else
+            count = 0;
     }
     public Integer getCount(){
         return count;
