@@ -11,23 +11,39 @@
     tools:context="cmpsc475.banjorental.MainActivity"
     android:background="@drawable/banj">
 
-    <TextView
-        android:id="@+id/bjl"
+    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/ncl"
-        android:layout_alignBaseline="@+id/NumBanjo"
-        android:layout_alignParentLeft="true"
+        android:id="@+id/spinner"
+        android:entries="@array/instruments">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/bjcl"
-        android:textSize="18sp" />
+        android:id="@+id/bjl"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/NumBanjo"
+        android:layout_below="@id/spinner"
+        android:layout_above="@+id/ncl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bjl"
+        android:layout_alignBaseline="@id/bjl"
+        android:textSize="18sp"
+        android:id="@+id/instrulabel"
+        android:layout_marginLeft="5sp"/>
 
     <EditText
         android:id="@+id/NumBanjo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/bjl"
-        android:layout_toRightOf="@+id/bjl"
+        android:layout_below="@id/spinner"
+        android:layout_toEndOf="@+id/instrulabel"
+        android:layout_toRightOf="@+id/instrulabel"
         android:ems="5"
         android:gravity="right"
         android:inputType="numberSigned"

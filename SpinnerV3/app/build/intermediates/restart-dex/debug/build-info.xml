@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64,x86"
+    api-level="21"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="2494814046555385"
+    token="-8956106504055732307"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="164" />
+    <task
+        name="instant-run-dex"
+        duration="353" />
+    <task
+        name="instant-run-transform"
+        duration="37" />
+    <task
+        name="verifier"
+        duration="2" />
+
+    <artifact
+        location="C:\Users\g2d\AndroidstudioProjects\SpinnerV3\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="2492587176949088"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\g2d\AndroidstudioProjects\SpinnerV3\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="2494360469673347"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\g2d\AndroidstudioProjects\SpinnerV3\app\build\intermediates\builds\debug\2494360469673347\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="2494671580585730"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\g2d\AndroidstudioProjects\SpinnerV3\app\build\intermediates\builds\debug\2494671580585730\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="2494814046555385"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\g2d\AndroidstudioProjects\SpinnerV3\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>

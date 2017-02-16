@@ -10,9 +10,11 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -21,7 +23,9 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
     EditText numBanjo, numCases;
-    final double BANJO_COST = 10, CASE_COST = 1, SALES_TAX = .05, INSURANCE = 2;
+    final double CASE_COST = 1, SALES_TAX = .05, INSURANCE = 2;
+    private int pos = 0;
+    final double[] COSTS = {9, 7, 10, 5};
     TextView baseCost, salesTax, insurance, totalCost;
     boolean insuranceEnabled = false;
     @Override
@@ -73,6 +77,22 @@ public class MainActivity extends AppCompatActivity {
                 UpdateCost();
             }
         });
+
+        ((Spinner) findViewById(R.id.spinner)).setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @RequiresApi(api = Build.VERSION_CODES.N)
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String selection = getResources().getStringArray(R.array.instruments)[position];
+                ((TextView) findViewById(R.id.instrulabel)).setText(selection);
+                pos = position;
+                UpdateCost();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -89,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception ex) {
             cases = 0;
         }
-        double base = banjos * BANJO_COST + cases * CASE_COST;
+        double base = banjos * COSTS[pos] + cases * CASE_COST;
         double tax = base * SALES_TAX;
         double ins = insuranceEnabled ? INSURANCE * banjos : 0;
         double totcost = base + tax + ins;
