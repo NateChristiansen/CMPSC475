@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_more_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cmpsc475.lab1.MoreInfo">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/souls1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mytext1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_information"
+            android:layout_below="@id/mytext1"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mybutton1"
+            android:onClick="darksoulswiki"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/souls2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/mybutton1"
+            android:layout_marginTop="50dp"
+            android:id="@+id/mytext2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_information"
+            android:layout_below="@id/mytext2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/mybutton2"
+            android:onClick="bloodbornewiki"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_below="@id/mybutton2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:onClick="end"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

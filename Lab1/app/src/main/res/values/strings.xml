@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="darksouls">The Souls series is a series of action role-playing video games created and developed by FromSoftware. The series began with the release of Demon\'s Souls for the PlayStation 3 in 2009.</string>
+    <string name="souls1">Dark Souls 1</string>
+    <string name="souls2">Bloodborne</string>
+    <string name="more_information">More Information</string>
+    <string name="tries">3</string>
+</resources>
