@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Settings" />
+    <item android:title="Background">
+        <menu>
+            <item android:title="Default"
+                android:id="@+id/defaultcolor"/>
+            <item android:title="Red"
+                android:id="@+id/redcolor"/>
+            <item android:title="Purple"
+                android:id="@+id/purplecolor"/>
+        </menu>
+    </item>
+    <item android:title="Retry Limit">
+        <menu>
+            <item android:title="2"
+                android:id="@+id/tries2"/>
+            <item android:title="3"
+                android:id="@+id/tries3"/>
+            <item android:title="4"
+                android:id="@+id/tries4"/>
+        </menu>
+    </item>
+</menu>

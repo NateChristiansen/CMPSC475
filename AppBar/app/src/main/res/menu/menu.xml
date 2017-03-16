@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.g2d.junk.MainActivity">
+    <item
+        android:id="@+id/i1"
+        android:orderInCategory="100"
+        android:title="Dishes and Stoves"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/i2"
+        android:orderInCategory="100"
+        android:title="Dishes and Stoves"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i3"
+        android:orderInCategory="100"
+        android:title="Dishes and Stoves"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i4"
+        android:orderInCategory="100"
+        android:title="Dishes and Stoves"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/i5"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_launcher"
+        android:title=""
+        app:showAsAction="always"/>
+
+    <item android:title="More"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+
+        <item android:title="ayy"
+            android:orderInCategory="101"
+            app:showAsAction="never"/>
+    </item>
+</menu>

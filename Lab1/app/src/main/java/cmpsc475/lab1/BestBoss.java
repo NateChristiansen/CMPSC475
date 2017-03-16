@@ -3,6 +3,8 @@ package cmpsc475.lab1;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -25,6 +27,32 @@ public class BestBoss extends AppCompatActivity {
         String ans = ((RadioButton)findViewById(((RadioGroup)findViewById(R.id.radios)).getCheckedRadioButtonId())).getText().toString();
         checker.putExtra("Answer", ans);
         startActivityForResult(checker, 1);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.defaultcolor:
+                getWindow().getDecorView().setBackground(R.color.colorDefault);
+                break;
+            case R.id.redcolor:
+                break;
+            case R.id.purplecolor:
+                break;
+            case R.id.tries2:
+                break;
+            case R.id.tries3:
+                break;
+            case R.id.tries4:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
