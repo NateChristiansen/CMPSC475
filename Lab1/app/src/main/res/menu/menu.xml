@@ -5,8 +5,8 @@
         <menu>
             <item android:title="Default"
                 android:id="@+id/defaultcolor"/>
-            <item android:title="Red"
-                android:id="@+id/redcolor"/>
+            <item android:title="Blue"
+                android:id="@+id/bluecolor"/>
             <item android:title="Purple"
                 android:id="@+id/purplecolor"/>
         </menu>

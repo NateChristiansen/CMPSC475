@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/label"
-        android:text="YOU HAVE 3 GUESSES"
+        android:text="GUESS ME IF YOU CAN"
         android:textSize="30sp"
         android:layout_centerHorizontal="true"/>
 

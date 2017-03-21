@@ -1,6 +1,11 @@
 package cmpsc475.lab1;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +20,7 @@ public class BestBoss extends AppCompatActivity {
     int tries = 3;
     Intent checker;
     TextView triesLabel;
+    Menu menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,24 +41,43 @@ public class BestBoss extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.defaultcolor:
-                getWindow().getDecorView().setBackground(R.color.colorDefault);
+                setBackground(R.color.colorDefault);
                 break;
-            case R.id.redcolor:
+            case R.id.bluecolor:
+                setBackground(R.color.colorPrimary);
                 break;
             case R.id.purplecolor:
+                setBackground(R.color.colorPurple);
                 break;
             case R.id.tries2:
+                changeTries(2);
                 break;
             case R.id.tries3:
+                changeTries(3);
                 break;
             case R.id.tries4:
+                changeTries(4);
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.M)
+    private void setBackground(int colorid) {
+        int c = getResources().getColor(colorid, null);
+        getWindow().getDecorView().setBackgroundColor(c);
+    }
+
+    private void changeTries(int t) {
+        if (tries == 0 || !findViewById(R.id.gobutton).isEnabled()) return;
+
+        tries = t;
+        triesLabel.setText(String.valueOf(tries));
     }
 
     @Override

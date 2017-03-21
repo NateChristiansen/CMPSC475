@@ -11,16 +11,25 @@
     tools:context="cmpsc475.lab1.MoreInfo">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_height="100dp"
+            android:id="@+id/ds1"
+            android:src="@drawable/ds1"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/souls1"
             android:layout_centerHorizontal="true"
-            android:id="@+id/mytext1"/>
+            android:id="@+id/mytext1"
+            android:layout_below="@id/ds1"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -31,13 +40,22 @@
             android:id="@+id/mybutton1"
             android:onClick="darksoulswiki"/>
 
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/mybutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/bb"
+            android:src="@drawable/bb"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/souls2"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/mybutton1"
-            android:layout_marginTop="50dp"
+            android:layout_below="@id/bb"
             android:id="@+id/mytext2"/>
 
         <Button
