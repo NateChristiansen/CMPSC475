@@ -15,13 +15,21 @@ public class MoreInfo extends AppCompatActivity {
     }
 
     public void bloodbornewiki(View view) {
-        overridePendingTransition(R.animator.fadein, R.animator.fadeout);
+        //overridePendingTransition(R.animator.fadein, R.animator.fadeout);
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://en.wikipedia.org/wiki/Bloodborne")));
+        overridePendingTransition(R.animator.fadeout, R.animator.fadein);
     }
 
     public void darksoulswiki(View view) {
-        overridePendingTransition(R.animator.fadein, R.animator.fadeout);
+        //
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://en.wikipedia.org/wiki/Dark_Souls")));
+        overridePendingTransition(R.animator.fadeout, R.animator.fadein);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        //overridePendingTransition(R.animator.fadein, R.animator.fadeout);
     }
 
     public void end(View view) {
