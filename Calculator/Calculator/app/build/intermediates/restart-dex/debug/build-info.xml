@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="24"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="181668817134165"
+    token="262026227970698194"
+    verifier="R_CLASS_CHANGE" >
+
+    <task
+        name="javac"
+        duration="194" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="37" />
+    <task
+        name="verifier"
+        duration="7" />
+
+    <artifact
+        location="F:\Downloads\Calculator\Calculator\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="F:\Downloads\Calculator\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="180982910240645"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="F:\Downloads\Calculator\Calculator\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="181668817134165"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="F:\Downloads\Calculator\Calculator\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="F:\Downloads\Calculator\Calculator\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

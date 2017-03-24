@@ -1,0 +1,7 @@
+#Wed Feb 08 08:27:37 EST 2017
+base.0=F\:\\Downloads\\Calculator\\Calculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_7439f5f7d18f5a72056c970a2d56a8a34e6e7719
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=F\:\\Downloads\\Calculator\\Calculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ad06f2c43dcf5cec1f2995ce48a19bc47460697c\\classes.dex
+base.1=F\:\\Downloads\\Calculator\\Calculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_ad06f2c43dcf5cec1f2995ce48a19bc47460697c
+file.0=F\:\\Downloads\\Calculator\\Calculator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_7439f5f7d18f5a72056c970a2d56a8a34e6e7719\\classes.dex
