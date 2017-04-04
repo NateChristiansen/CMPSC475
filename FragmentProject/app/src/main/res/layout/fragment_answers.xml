@@ -30,14 +30,6 @@
                 android:text="Congratulations! You got the correct answer!"
                 android:id="@+id/othertxt"/>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Back"
-                android:layout_below="@id/othertxt"
-                android:layout_centerHorizontal="true"
-                android:onClick="quit"/>
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -61,13 +53,6 @@
                 android:layout_height="wrap_content"
                 android:text="Boo! You suck! Try again?"
                 android:id="@+id/sometxt"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Back"
-                android:layout_below="@id/sometxt"
-                android:layout_centerHorizontal="true"
-                android:onClick="quit"/>
 
         </RelativeLayout>
 

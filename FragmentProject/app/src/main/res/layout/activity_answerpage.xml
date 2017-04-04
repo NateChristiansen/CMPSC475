@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cmpsc475.fragmentproject.MainActivity">
+    tools:context="cmpsc475.fragmentproject.AnswerPage">
 
     <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/questions"
-        android:name="cmpsc475.fragmentproject.Questions"
-        tools:layout="@layout/fragment_questions" />
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:name="cmpsc475.fragmentproject.Answers"
+        tools:layout="@layout/fragment_answers"
+        android:id="@+id/answerpage">
+
+    </fragment>
 
 </RelativeLayout>

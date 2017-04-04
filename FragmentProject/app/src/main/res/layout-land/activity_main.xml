@@ -6,27 +6,19 @@
     android:layout_height="match_parent"
     tools:context="cmpsc475.fragmentproject.MainActivity">
 
-    <RelativeLayout
+    <fragment
+        android:layout_width="315dp"
         android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:id="@+id/q">
+        android:id="@+id/questions"
+        android:name="cmpsc475.fragmentproject.Questions"
+        tools:layout="@layout/fragment_questions" />
 
-        <fragment
-            android:layout_width="315dp"
-            android:layout_height="match_parent"
-            android:id="@+id/questions"
-            android:name="cmpsc475.fragmentproject.Questions"
-            tools:layout="@layout/fragment_questions" />
-
-        <fragment
-            android:layout_toRightOf="@id/questions"
-            android:layout_width="315dp"
-            android:layout_height="match_parent"
-            android:name="cmpsc475.fragmentproject.Answers"
-            android:id="@+id/answers"
-            tools:layout="@layout/fragment_answers" />
-
-    </RelativeLayout>
-
+    <fragment
+        android:layout_toRightOf="@id/questions"
+        android:layout_width="315dp"
+        android:layout_height="match_parent"
+        android:name="cmpsc475.fragmentproject.Answers"
+        android:id="@+id/answers"
+        tools:layout="@layout/fragment_answers" />
 
 </RelativeLayout>

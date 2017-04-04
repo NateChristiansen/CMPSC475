@@ -30,49 +30,27 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Artorias"/>
+            android:text="Artorias"
+            android:onClick="tryAnswer"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Slave Knight Gael"/>
+            android:text="Slave Knight Gael"
+            android:onClick="tryAnswer"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ludwig"/>
+            android:text="Ludwig"
+            android:onClick="tryAnswer"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Orphan of Kos"/>
+            android:text="Orphan of Kos"
+            android:onClick="tryAnswer"/>
 
     </RadioGroup>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/radios"
-        android:text="Go"
-        android:id="@+id/gobutton"
-        android:onClick="tryAnswer"/>
-
-    <TextView
-        android:layout_marginLeft="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tries:"
-        android:layout_toRightOf="@id/gobutton"
-        android:layout_alignBaseline="@id/gobutton"
-        android:id="@+id/triestag"/>
-
-    <TextView
-        android:id="@+id/tries"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3"
-        android:layout_toRightOf="@id/triestag"
-        android:layout_marginLeft="5sp"
-        android:layout_alignBaseline="@id/gobutton"/>
 
 </RelativeLayout>
