@@ -1,1 +1,1 @@
-F:\School\CmpSc475\Projects\WindowsPhoneProjects\Clicker\Clicker\Clicker.csproj;x86
+C:\School\CMPSC475\Projects\WindowsPhoneProjects\Clicker\Clicker\Clicker.csproj;x86

@@ -8,8 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="Display" TextAlignment="Right" HorizontalAlignment="Center" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Margin="10,10,10,0" FontSize="72" BorderThickness="0" Width="340" Height="190"/>
-        <Button Content="AC" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top" Height="81" Width="81" Click="Clear"/>
+        <TextBox x:Name="Display" TextAlignment="Right" HorizontalAlignment="Center" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Margin="10,10,10,0" FontSize="72" BorderThickness="0" Width="340" Height="104"/>
+        <Button Content="Rand" HorizontalAlignment="Left" Margin="10,205,0,0" VerticalAlignment="Top" Height="81" Width="81" Click="Operator"/>
         <Button Content="^" HorizontalAlignment="Left" Margin="96,205,0,0" VerticalAlignment="Top" Height="81" Width="81" Click="Operator"/>
         <Button Content="%" HorizontalAlignment="Left" Margin="183,205,0,0" VerticalAlignment="Top" Height="81" Width="81" Click="Operator"/>
         <Button Content="x" HorizontalAlignment="Left" Margin="269,291,0,0" VerticalAlignment="Top" Height="81" Width="81" Click="Operator"/>
@@ -27,5 +27,7 @@
         <Button Content="3" HorizontalAlignment="Left" Margin="183,463,0,0" VerticalAlignment="Top" Height="81" Width="81" Click="Number"/>
         <Button Content="=" HorizontalAlignment="Left" Margin="183,549,0,0" VerticalAlignment="Top" Height="81" Width="167" Click="Equals"/>
         <Button Content="0" HorizontalAlignment="Left" Margin="10,549,0,0" VerticalAlignment="Top" Height="81" Width="167" Click="Number"/>
+        <Button Content="AC" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" Height="81" Width="254" Click="Clear"/>
+        <Image HorizontalAlignment="Left" Height="81" Margin="269,119,0,0" VerticalAlignment="Top" Width="81" Source="Assets/texas-instruments-squarelogo-1432804634574.png"/>
     </Grid>
 </Page>

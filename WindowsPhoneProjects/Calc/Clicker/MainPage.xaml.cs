@@ -94,6 +94,18 @@ namespace Clicker
             value = (int)Math.Pow(operand1, operand2);
             else if (op.Equals("%") && operand2 != 0)
             value = operand1 % operand2;
+            else if (op.Equals("Rand"))
+            {
+                int rand = new Random().Next(0, 3);
+                if (rand == 0)
+                    value = operand1 + operand2;
+                else if (rand == 1)
+                    value = operand1 - operand2;
+                else if (rand == 2)
+                    value = operand1 * operand2;
+                else if (rand == 3)
+                    value = (int)Math.Pow(operand1, operand2);
+            }
             else
             value = 0;
         }
